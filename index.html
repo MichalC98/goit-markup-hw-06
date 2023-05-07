@@ -13,6 +13,7 @@
     rel="stylesheet">
 </head>
 
+
 <body>
   <header class="border">
     <div class="container-header flex-header">
@@ -295,6 +296,8 @@
       </div>
     </section>
   </main>
+
+
   <footer class="background-grey footer-sec">
     <div class="container footer-flex-1">
       <div class="footer-flex-1-grup">
@@ -311,7 +314,7 @@
         </address>
       </div>
       <div class="footer-flex-1-grup">
-        <p class="social-title-footer">Dołącz do nas</p>
+        <p class="social-title-footer">DOŁĄCZ DO NAS</p>
         <ul class="footer-flex-2">
           <li class="footer-flex-2-grup">
             <a href="./" rel="noreferrer noopener" class="social-icon-background"><svg class="social-icon-footer">
@@ -335,6 +338,18 @@
           </li>
         </ul>
       </div>
+      <div class="footer-flex-1-grup">
+        <p class="newsletter-title">ZAPISZ SIĘ DO NEWSLETTERA</p>
+        <form name="newsletter_signup" autocomplete="on" novalidate class="newsletter-flex">
+          <label>
+            <input type="email" name="email" placeholder="E-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+              class="newsletter-imputbox" />
+          </label>
+          <button type="submit" class="newsletter-button">Zapisz się <svg class="newsletter-button-svg">
+              <use href="./images/symbol-defs.svg#icon-send-form"></use>
+            </svg></button>
+        </form>
+      </div>
     </div>
   </footer>
 
@@ -346,6 +361,53 @@
           <use class="" href="./images/symbol-defs.svg#icon-close-symbol"></use>
         </svg>
       </button>
+
+      <p class="modal-title">Zostaw swoje dane w formularzu poniżej</p>
+      <form class="modal-flex">
+
+        <label class="modal-subtitle">Imie
+          <input type="text" name="name" class="modal-imput" placeholder="" />
+          <svg class="modal-svg">
+            <use href="./images/symbol-defs.svg#icon-person-form"></use>
+          </svg>
+        </label>
+
+        <label class="modal-subtitle">Telefon
+          <input type="tel" name="phone" class="modal-imput" />
+          <svg class="modal-svg">
+            <use href="./images/symbol-defs.svg#icon-phone-form"></use>
+          </svg>
+        </label>
+
+        <label class="modal-subtitle">Email
+          <input type="email" name="email" class="modal-imput" />
+          <svg class="modal-svg">
+            <use href="./images/symbol-defs.svg#icon-email-form"></use>
+          </svg>
+        </label>
+
+        <label class="modal-subtitle">Komentarz
+          <textarea name="coment" placeholder="Wprowadź tekst" class="modal-textbox"></textarea>
+        </label>
+
+        <div class="modal-checkbox-box1">
+          <div class="modal-checkbox-box2">
+            <input type="checkbox" name="consent" id="rule-checkbox" required class="modal-checkbox" />
+            <label for="rule-checkbox" class="modal-check-label">
+              <svg class="modal-checkbox-svg">
+                <use href="./images/symbol-defs.svg#icon-checkmark"></use>
+              </svg>
+            </label>
+          </div>
+          <p class="modal-text">Oświadczam iż przeczytałem<a class="modal-link" href="#">Regulamin</a>i<a
+              class="modal-link" href="#">Politykę Prywatności.</a></p>
+        </div>
+
+
+
+        <button type="submit" class="modal-button">Wyślij</button>
+
+      </form>
     </div>
   </div>
 

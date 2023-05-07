@@ -47,6 +47,7 @@
     </header>
 
 
+
     <main>
         <div class="section">
             <div class="container">
@@ -250,6 +251,9 @@
             </div>
         </div>
     </main>
+
+
+
     <footer class="background-grey footer-sec">
         <div class="container footer-flex-1">
             <div class="footer-flex-1-grup">
@@ -268,29 +272,45 @@
                 </address>
             </div>
             <div class="footer-flex-1-grup">
-                <p class="social-title-footer">Dołącz do nas</p>
+                <p class="social-title-footer">DOŁĄCZ DO NAS</p>
                 <ul class="footer-flex-2">
                     <li class="footer-flex-2-grup">
-                        <div tabindex="0" class="social-icon-background"><svg class="social-icon-footer">
+                        <a href="./" rel="noreferrer noopener" class="social-icon-background"><svg
+                                class="social-icon-footer">
                                 <use href="./images/symbol-defs.svg#icon-instagram"></use>
-                            </svg></div>
+                            </svg></a>
                     </li>
                     <li class="footer-flex-2-grup">
-                        <div tabindex="0" class="social-icon-background"><svg class="social-icon-footer">
+                        <a href="./" rel="noreferrer noopener" class="social-icon-background"><svg
+                                class="social-icon-footer">
                                 <use href="./images/symbol-defs.svg#icon-twitter"></use>
-                            </svg></div>
+                            </svg></a>
                     </li>
                     <li class="footer-flex-2-grup">
-                        <div tabindex="0" class="social-icon-background"><svg class="social-icon-footer">
+                        <a href="./" rel="noreferrer noopener" class="social-icon-background"><svg
+                                class="social-icon-footer">
                                 <use href="./images/symbol-defs.svg#icon-facebook"></use>
-                            </svg></div>
+                            </svg></a>
                     </li>
                     <li class="footer-flex-2-grup">
-                        <div tabindex="0" class="social-icon-background"><svg class="social-icon-footer">
+                        <a href="./" rel="noreferrer noopener" class="social-icon-background"><svg
+                                class="social-icon-footer">
                                 <use href="./images/symbol-defs.svg#icon-linkedin"></use>
-                            </svg></div>
+                            </svg></a>
                     </li>
                 </ul>
+            </div>
+            <div class="footer-flex-1-grup">
+                <p class="newsletter-title">ZAPISZ SIĘ DO NEWSLETTERA</p>
+                <form name="newsletter_signup" autocomplete="on" novalidate class="newsletter-flex">
+                    <label>
+                        <input type="email" name="email" required placeholder="E-mail"
+                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" class="newsletter-imputbox" />
+                    </label>
+                    <button type="submit" class="newsletter-button">Zapisz się <svg class="newsletter-button-svg">
+                            <use href="./images/symbol-defs.svg#icon-send-form"></use>
+                        </svg></button>
+                </form>
             </div>
         </div>
     </footer>

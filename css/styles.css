@@ -26,6 +26,7 @@ body {
     --modal-x-border: #0000001A;
     --sec-3-img-text-back: #2F303ACC;
     --product-overley: #2196F3E5;
+    --newsletter-fading: #FFFFFF4D;
 }
 
 
@@ -268,6 +269,64 @@ p {
 .footer-flex-2-grup:last-child {
     margin-right: 0px;
 }
+
+.newsletter-title {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16.41px;
+    letter-spacing: 0.03em;
+}
+.newsletter-imputbox {
+    height: 50px;
+    width: 358px;
+    border: 1px solid var(--newsletter-fading);
+    border-radius: 4px;
+    background: none;
+    color: var(--white);
+    padding-left: 16px;
+}
+.newsletter-imputbox:not(:placeholder-shown):invalid {
+    border-color: red;
+}
+.newsletter-button {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    height: 50px;
+    width: 200px;
+    padding-left: 42px;
+    margin-left: 12px;
+    border-width: 0px;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0,06em;
+    color: var(--white);
+    fill: var(--white);
+    background-color: var(--main-blue);
+}
+.newsletter-button:hover,
+.newsletter-button:focus {
+    color: var(--main-blue);
+    fill: var(--main-blue);
+    background-color: var(--white);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.newsletter-button-svg {
+    height: 24px;
+    width: 24px;
+    margin-left: 24px;
+}
+.newsletter-flex {
+    display: flex;
+    flex-direction: row;
+}
+
+
 
 /*  MAIN - INDEX */
 
@@ -650,4 +709,138 @@ p {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
+}
+
+.modal-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0,03em;
+    text-align: center;
+    color: var(--lighter-black);
+    margin-top: 40px;
+    margin-bottom: 12px;
+}
+
+.modal-flex {
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.modal-subtitle {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 4px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: var(--fade-on-white);
+    fill: var(--fade-on-white);
+}
+.modal-subtitle:focus-within {
+    fill: var(--main-blue);
+}
+.modal-imput {
+    height: 40px;
+    padding-left: 42px;
+    border:1px solid #21212133;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    outline: none;
+}
+.modal-imput:focus-within {
+    border-color: var(--main-blue);
+}
+.modal-svg {
+    position: absolute;
+    height: 12px;
+    width: 12px;
+    left: 15px;
+    top: 28px;
+}
+.modal-textbox {
+    height: 120px;
+    padding: 12px 16px;
+    border: 1px solid #21212133;
+    border-radius: 4px;
+    outline: none;
+    margin-bottom: 20px;
+}
+.modal-textbox:focus-within {
+    border-color: var(--main-blue);
+}
+
+.modal-button {
+    height: 50px;
+    width: 200px;
+    border: none;
+    color: var(--white);
+    background-color: var(--main-blue);
+    border-radius: 4px;
+    margin-left: 124px;
+    box-shadow: 0px 1px 3px var(--material-shadow-v3), 0px 1px 1px var(--material-shadow-v2), 0px 2px 1px var(--material-shadow-v1);
+}
+
+
+.modal-checkbox-box1 {
+    display: flex;
+    margin-bottom: 30px;
+}
+.modal-checkbox-box2 {
+    position: relative;
+    display: flex;
+    flex: 0 0 auto;
+    height: 15px;
+    width: 16px;
+    border-radius: 2px;
+}
+
+.modal-checkbox {
+position: absolute;
+width: 100%;
+height: 100%;    
+clip: rect(1px, 1px, 1px, 1px);
+}
+.modal-check-label {
+    border: 1px solid var(--black);
+    border-radius: 2px;
+    height: 15px;
+    width: 16px;
+    cursor: pointer;
+    fill: transparent;
+    margin-top: 4px;
+}
+
+.modal-checkbox-svg {
+    position: absolute;
+    height: 8px;
+    width: 11px;
+    top: 8px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+.modal-checkbox:checked + .modal-check-label {
+    border-color: var(--main-blue);
+    background-color: var(--main-blue);
+    fill: var(--white);
+}
+.modal-text {
+    display: flex;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--fade-on-white);
+    letter-spacing: 0.03em;
+    line-height: 24px;
+    padding-left: 10px;
+}
+.modal-link {
+    display: flex;
+    color: var(--main-blue);
+    text-decoration: underline;
+    padding-left: 4px;
+    padding-right: 3px;
 }
