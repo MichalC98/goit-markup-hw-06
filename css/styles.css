@@ -227,6 +227,7 @@ p {
 }
 
 .social-title-footer {
+    padding-top: 10px;
     font-weight: 700;
     font-size: 14px;
     line-height: 16.41px;
@@ -271,6 +272,7 @@ p {
 }
 
 .newsletter-title {
+    padding-top: 10px;
     margin-bottom: 20px;
     font-weight: 700;
     font-size: 14px;
@@ -306,6 +308,7 @@ p {
     color: var(--white);
     fill: var(--white);
     background-color: var(--main-blue);
+    cursor: pointer
 }
 .newsletter-button:hover,
 .newsletter-button:focus {
@@ -683,7 +686,8 @@ p {
     top: 50%;
     left: 50%;
     width: 528px;
-    min-height: 581px;
+    height: 581px;
+    padding: 40px;
     transform: translate(-50%, -50%);
     background-color: var(--white);
     box-shadow: 0px 1px 3px var(--material-shadow-v3), 0px 1px 1px var(--material-shadow-v2), 0px 2px 1px var(--material-shadow-v1);
@@ -696,6 +700,7 @@ p {
     right: 14px;
     border-radius: 50px;
     border-color: var(--modal-x-border);
+    background-color: var(--white);
 }
 .x-symbol {
     box-sizing: border-box;
@@ -718,22 +723,18 @@ p {
     letter-spacing: 0,03em;
     text-align: center;
     color: var(--lighter-black);
-    margin-top: 40px;
     margin-bottom: 12px;
 }
 
 .modal-flex {
     display: flex;
     flex-direction: column;
-    margin-left: 40px;
-    margin-right: 40px;
 }
 
 .modal-subtitle {
     display: flex;
     flex-direction: column;
     position: relative;
-    margin-bottom: 4px;
     font-weight: 400;
     font-size: 12px;
     line-height: 14px;
@@ -750,6 +751,7 @@ p {
     border:1px solid #21212133;
     border-radius: 4px;
     margin-bottom: 10px;
+    margin-top: 4px;
     outline: none;
 }
 .modal-imput:focus-within {
@@ -769,12 +771,14 @@ p {
     border-radius: 4px;
     outline: none;
     margin-bottom: 20px;
+    resize: none;
 }
 .modal-textbox:focus-within {
     border-color: var(--main-blue);
 }
 
 .modal-button {
+    cursor: pointer;
     height: 50px;
     width: 200px;
     border: none;
@@ -783,6 +787,10 @@ p {
     border-radius: 4px;
     margin-left: 124px;
     box-shadow: 0px 1px 3px var(--material-shadow-v3), 0px 1px 1px var(--material-shadow-v2), 0px 2px 1px var(--material-shadow-v1);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.06em;
 }
 
 
