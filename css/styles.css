@@ -759,9 +759,9 @@ p {
 }
 .modal-svg {
     position: absolute;
-    height: 12px;
-    width: 12px;
-    left: 15px;
+    height: 18px;
+    width: 18px;
+    left: 13px;
     top: 28px;
 }
 .modal-textbox {
@@ -771,6 +771,7 @@ p {
     border-radius: 4px;
     outline: none;
     margin-bottom: 20px;
+    margin-top: 4px;
     resize: none;
 }
 .modal-textbox:focus-within {
